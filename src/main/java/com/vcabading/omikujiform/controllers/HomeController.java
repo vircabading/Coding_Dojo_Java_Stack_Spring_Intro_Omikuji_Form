@@ -13,10 +13,10 @@ public class HomeController {
 	
 	//	//// GET ////////////////////////////////////////////////
 	
-    @GetMapping("/")
-    public String index(Model model) {
-    	model.addAttribute("dojoName", "San Jose");
-        return "index.jsp";
+    @GetMapping("/omikuji")
+    public String omikuji(Model model) {
+    	
+    	return "omikuji.jsp";
     }
     
     //	//// POST ///////////////////////////////////////////////
