@@ -31,7 +31,7 @@
 	<!-- //// MAIN AREA //////// -->
 	<main role="main">
 		<div class="container mt-4 p-3 bg-primary">
-			<h1>Omikuji Show</h1>
+			<h1>Here's Your Omikuji</h1>
 			<h2>
 				In <c:out value="${ years }"></c:out> years,
 				you will live in <c:out value="${ city }"></c:out>
