@@ -16,4 +16,5 @@ h1 {
 
 main>.container {
 	background-color: white;
+    border-radius: 15px;
 }

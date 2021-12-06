@@ -33,7 +33,7 @@
 		<div class="container mt-4 p-3">
 			<h1>Send an Omikuji!</h1>
 			<form action="/omikuji/post" method="post">
-				<div class="form-group">
+				<div class="form-group mb-2">
 					<label for="years">Pick any number from 5 to 25</label> <select
 						class="form-control" id="years">
 						<option>5</option>
@@ -59,10 +59,17 @@
 						<option>25</option>
 					</select>
 				</div>
-				<div class="form-group">
-					<label for="city">Enter the name of any city:</label> <input
-						type="text" class="form-control" id="city"
-						placeholder="City name">
+				<div class="form-group mb-2">
+					<label for="city">Enter the name of any city:</label> 
+					<input type="text" class="form-control" id="city" placeholder="City name">
+				</div>
+				<div class="form-group mb-2">
+					<label for="person">Enter the name of any real person:</label> 
+					<input type="text" class="form-control" id="person" placeholder="Person's name">
+				</div>
+				<div class="form-group mb-2">
+					<label for="endeavor">Enter a professional endeavor and hobby:</label> 
+					<input type="text" class="form-control" id="endeavor" placeholder="Endeavor">
 				</div>
 				<button type="submit" class="btn btn-primary">Send</button>
 			</form>
