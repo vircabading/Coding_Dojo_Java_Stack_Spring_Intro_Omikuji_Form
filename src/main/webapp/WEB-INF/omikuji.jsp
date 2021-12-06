@@ -60,18 +60,29 @@
 					</select>
 				</div>
 				<div class="form-group mb-2">
-					<label for="city">Enter the name of any city:</label> 
-					<input type="text" class="form-control" id="city" placeholder="City name">
+					<label for="city">Enter the name of any city:</label> <input
+						type="text" class="form-control" id="city" placeholder="City name">
 				</div>
 				<div class="form-group mb-2">
-					<label for="person">Enter the name of any real person:</label> 
-					<input type="text" class="form-control" id="person" placeholder="Person's name">
+					<label for="person">Enter the name of any real person:</label> <input
+						type="text" class="form-control" id="person"
+						placeholder="Person's name">
 				</div>
 				<div class="form-group mb-2">
-					<label for="endeavor">Enter a professional endeavor and hobby:</label> 
-					<input type="text" class="form-control" id="endeavor" placeholder="Endeavor">
+					<label for="endeavor">Enter a professional endeavor or
+						hobby:</label> <input type="text" class="form-control" id="endeavor"
+						placeholder="Endeavor">
 				</div>
-				<button type="submit" class="btn btn-primary">Send</button>
+				<div class="form-group mb-2">
+					<label for="organizm">Enter any type of living thing:</label> <input
+						type="text" class="form-control" id="organizm"
+						placeholder="Living thing">
+				</div>
+				<div class="form-group mb-2">
+					<label for="somethingNice">Say something nice to someone:</label>
+					<textarea class="form-control" id="somethingNice" rows="3"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
 
 		</div>
