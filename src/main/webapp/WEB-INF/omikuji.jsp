@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!--/////////////////////////////////////////////////////
@@ -23,7 +22,7 @@
 		<div class="navbar navbar-dark box-shadow">
 			<div class="container d-flex justify-content-between">
 				<a href="/" class="navbar-brand d-flex align-items-center"><strong>Omikuji
-						Form</strong></a> <a class="btn btn-secondary " href="/omikuji">HOME</a>
+						Form</strong></a> <a class="btn btn-primary" href="/omikuji">HOME</a>
 			</div>
 		</div>
 	</header>
@@ -33,6 +32,8 @@
 		<div class="container mt-4 p-3">
 			<h1>Send an Omikuji!</h1>
 			<form action="/omikuji/post" method="post">
+				<label for="years">Pick a number from 5 to 25:</label>
+				<input type="number" id="years" name="years" min="5" max="25">
 				<div class="form-group mb-2">
 					<label class="form-label" for="city">Enter the name of a City:</label>
 					 <input class="form-control" type="text" id="city" name="city">
@@ -53,7 +54,7 @@
 					<label for="somethingnice">Say something nice to someone:</label>
 					<textarea class="form-control" id="somethingnice" name="somethingnice" rows="3"></textarea>
 				</div>
-				<input type="submit">
+				<input class="btn btn-primary" type="submit">
 			</form>
 
 		</div>

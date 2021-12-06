@@ -26,24 +26,27 @@ public class HomeController {
     
     @GetMapping("/omikuji/show")
     public String omikujiShow(Model model, HttpSession session) {
+    	model.addAttribute("years", session.getAttribute("years"));
     	model.addAttribute("city", session.getAttribute("city"));
     	model.addAttribute("endeavor", session.getAttribute("endeavor"));
     	model.addAttribute("person", session.getAttribute("person"));
     	model.addAttribute("organizm", session.getAttribute("organizm"));
     	model.addAttribute("somethingnice", session.getAttribute("somethingnice"));
-    	return "showFile.jsp";
+    	return "omikujishow.jsp";
     }
     
     //	//// POST ///////////////////////////////////////////////
     
     @RequestMapping(value="/omikuji/post", method=RequestMethod.POST)
     public String omikujiPost(
+    		@RequestParam(value="years") Integer years,
     		@RequestParam(value="city") String city,
     		@RequestParam(value="person") String person,
     		@RequestParam(value="endeavor") String endeavor,
     		@RequestParam(value="organizm") String organizm,
     		@RequestParam(value="somethingnice") String somethingnice,
     		HttpSession session) {
+    	session.setAttribute("years", years);
     	session.setAttribute("city", city);
     	session.setAttribute("person", person);
     	session.setAttribute("endeavor", endeavor);

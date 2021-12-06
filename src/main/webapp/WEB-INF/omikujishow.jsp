@@ -19,43 +19,28 @@
 <body>
 	<!-- //// HEADER //////// -->
 	<header>
-		<div class="navbar navbar-dark box-shadow">
+		<div class="navbar navbar-dark bg-dark box-shadow">
 			<div class="container d-flex justify-content-between">
-				<a href="/" class="navbar-brand d-flex align-items-center"><strong>Omikuji
-						Form</strong></a> <a class="btn btn-secondary " href="/omikuji">HOME</a>
+				<a href="/" class="navbar-brand d-flex align-items-center">
+				<strong>Omikuji Form</strong></a> 
+				<a class="btn btn-secondary " href="/omikuji">HOME</a>
 			</div>
 		</div>
 	</header>
 
 	<!-- //// MAIN AREA //////// -->
 	<main role="main">
-		<div class="container mt-4 p-3">
+		<div class="container mt-4 p-3 bg-primary">
 			<h1>Omikuji Show</h1>
+			<h2>
+				In <c:out value="${ years }"></c:out> years,
+				you will live in <c:out value="${ city }"></c:out>
+				with <c:out value="${ person }"></c:out>
+				as your roomate, <c:out value="${ endeavor }"></c:out>
+				for a living.  The next time you see a <c:out value="${ organizm }"></c:out>,
+				you will have good luck.  Also, <c:out value="${ somethingnice }"></c:out>
+			</h2>
 		</div>
-		<p>
-			Year: 
-			<c:out value="${ year }"></c:out>
-		</p>
-		<p>
-			City: 
-			<c:out value="${ city }"></c:out>
-		</p>
-		<p>
-			Person:
-			<c:out value="${ person }"></c:out>
-		</p>
-		<p>
-			Endeavor:
-			<c:out value="${ endeavor }"></c:out>
-		</p>
-		<p>
-			Organizm:
-			<c:out value="${ organizm }"></c:out>
-		</p>
-		<p>
-			Something Nice:
-			<c:out value="${ somethingnice }"></c:out>
-		</p>
 	</main>
 
 	<!-- ---- JAVASCRIPT LINKS ---------------------------- -->

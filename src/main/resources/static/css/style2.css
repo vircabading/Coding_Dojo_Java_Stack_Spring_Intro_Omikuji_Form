@@ -1,0 +1,20 @@
+/*/////////////////////////////////////////////////////////
+//	STYLE TWO CSS
+///////////////////////////////////////////////////////////*/
+
+body {
+    background-color: lightblue;
+}
+
+.navbar {
+	background-color: navy;
+}
+
+h1 {
+	color: dodgerblue;
+}
+
+main>.container {
+	background-color: white;
+    border-radius: 15px;
+}
