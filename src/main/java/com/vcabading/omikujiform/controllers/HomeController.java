@@ -30,7 +30,8 @@ public class HomeController {
     	model.addAttribute("endeavor", session.getAttribute("endeavor"));
     	model.addAttribute("person", session.getAttribute("person"));
     	model.addAttribute("organizm", session.getAttribute("organizm"));
-    	return "omikujishow.jsp";
+    	model.addAttribute("somethingnice", session.getAttribute("somethingnice"));
+    	return "showFile.jsp";
     }
     
     //	//// POST ///////////////////////////////////////////////
@@ -41,11 +42,13 @@ public class HomeController {
     		@RequestParam(value="person") String person,
     		@RequestParam(value="endeavor") String endeavor,
     		@RequestParam(value="organizm") String organizm,
+    		@RequestParam(value="somethingnice") String somethingnice,
     		HttpSession session) {
     	session.setAttribute("city", city);
     	session.setAttribute("person", person);
     	session.setAttribute("endeavor", endeavor);
     	session.setAttribute("organizm", organizm);
+    	session.setAttribute("somethingnice", somethingnice);
 
     	
         return "redirect:/omikuji/show";

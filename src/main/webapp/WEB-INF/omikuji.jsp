@@ -33,21 +33,25 @@
 		<div class="container mt-4 p-3">
 			<h1>Send an Omikuji!</h1>
 			<form action="/omikuji/post" method="post">
-				<div>
-					<label>city:</label> 
-					<input type="text" name="city">
+				<div class="form-group mb-2">
+					<label class="form-label" for="city">Enter the name of a City:</label>
+					 <input class="form-control" type="text" id="city" name="city">
 				</div>
-				<div>
-					<label>person:</label> 
-					<input type="text" name="person">
+				<div class="form-group mb-2">
+					<label class="form-label" for="person">Enter the name of a real person:</label>
+					 <input class="form-control" type="text" id="person" name="person">
 				</div>
-				<div>
-					<label>endeavor:</label> 
-					<input type="text" name="endeavor">
+				<div class="form-group mb-2">
+					<label class="form-label" for="endeaver">Enter a professional endeavor or hobby:</label>
+					 <input class="form-control" type="text" id="endeavor" name="endeavor">
 				</div>
-				<div>
-					<label>organizm:</label> 
-					<input type="text" name="organizm">
+				<div class="form-group mb-2">
+					<label class="form-label" for="organizm">Enter any type of living thing:</label>
+					 <input class="form-control" type="text" id="organizm" name="organizm">
+				</div>
+				<div class="form-group mb-2">
+					<label for="somethingnice">Say something nice to someone:</label>
+					<textarea class="form-control" id="somethingnice" name="somethingnice" rows="3"></textarea>
 				</div>
 				<input type="submit">
 			</form>
