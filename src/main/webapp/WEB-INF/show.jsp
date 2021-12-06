@@ -31,7 +31,7 @@
 	<!-- //// MAIN AREA //////// -->
 	<main role="main">
 		<div class="container mt-4 p-3">
-			<h1>Send an Omikuji!</h1>
+			<h1>Show</h1>
 			<form action="/omikuji/post" method="post">
 				<div>
 					<label>city:</label> 

@@ -1,9 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!--/////////////////////////////////////////////////////
-//	OMIKUJI JSP
+//	OMIKUJI SHOW JSP
 ///////////////////////////////////////////////////////// -->
 
 <!DOCTYPE html>
@@ -31,30 +30,33 @@
 	<!-- //// MAIN AREA //////// -->
 	<main role="main">
 		<div class="container mt-4 p-3">
-			<h1>Send an Omikuji!</h1>
-			<form action="/omikuji/post" method="post">
-				<div>
-					<label>city:</label> 
-					<input type="text" name="city">
-				</div>
-				<div>
-					<label>person:</label> 
-					<input type="text" name="person">
-				</div>
-				<div>
-					<label>endeavor:</label> 
-					<input type="text" name="endeavor">
-				</div>
-				<div>
-					<label>organizm:</label> 
-					<input type="text" name="organizm">
-				</div>
-				<input type="submit">
-			</form>
-
+			<h1>Omikuji Show</h1>
 		</div>
+		<p>
+			Year: 
+			<c:out value="${ year }"></c:out>
+		</p>
+		<p>
+			City: 
+			<c:out value="${ city }"></c:out>
+		</p>
+		<p>
+			Person:
+			<c:out value="${ person }"></c:out>
+		</p>
+		<p>
+			Endeavor:
+			<c:out value="${ endeavor }"></c:out>
+		</p>
+		<p>
+			Organizm:
+			<c:out value="${ organizm }"></c:out>
+		</p>
+		<p>
+			Something Nice:
+			<c:out value="${ somethingNice }"></c:out>
+		</p>
 	</main>
-
 
 	<!-- ---- JAVASCRIPT LINKS ---------------------------- -->
 	<script src="/webjars/jquery/jquery.min.js"></script>
